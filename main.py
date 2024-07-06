@@ -12,11 +12,9 @@ def main(model_cofig = None):
         "num_k": 4,
         "size": 112,
 
-        "sour_path": r'F:\FER_dataset_clearned\RAF_DB\test',
-        # "target_train_path": r'F:\FER_dataset_clearned\jaffe\train',
-        "target_train_path": r'F:\FER_dataset_clearned\SFEW\RetinaFace_sfew2.0\train',
-        # "target_test_path": r'F:\FER_dataset_clearned\jaffe\test',
-        "target_test_path": r'F:\FER_dataset_clearned\SFEW\RetinaFace_sfew2.0\valid',
+        "sour_path": r'./',
+        "target_train_path": r'./',
+        "target_test_path": r'./',
         "mode": 'sfew'}
 
     eng = Solver(num_k=model_cofig['num_k'], batch_size=model_cofig['batch_size'], lr=model_cofig['lr'], momentum=model_cofig['momentum'],
